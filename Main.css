@@ -1,0 +1,53 @@
+body {
+    background-image: url(images/fon.jpeg); /* Путь к фоновому изображению */
+    background-attachment: fixed; /* Фиксируем фон веб-страницы */
+    background-position: center;
+    background-size: cover;
+}
+
+.card-special{
+   background-color: #FFF;
+   position: relative;
+   margin: 60px auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   font-family: 'Roboto Condensed', sans-serif;
+   box-shadow: inset 6px 6px 8px 0 rgba(0,0,0,0.4);
+}
+.card-special:after,
+.card-special:before {
+    mix-blend-mode:multiply;
+    filter:none;
+    z-index: -1;
+    content:'';
+    width: calc(100% + 90px);
+    height: calc(100% + 90px);
+    position: absolute;
+    animation: card-special 8s ease-in-out infinite;
+}
+@keyframes card-special {
+    0%, 100% {
+        clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+    }
+    50% {
+        clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+    }
+}
+.card-special:after{
+    animation-delay: -5s;
+    background-color: #2e4c3c;
+    clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+}
+.card-special:before {
+    background-color: #ffffff;
+    clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+}
+.card-special:hover:after{
+    animation-delay: 1s;
+}
+.card-special:hover:before,
+.card-special:hover:after {
+    animation-duration: 2s;
+}
