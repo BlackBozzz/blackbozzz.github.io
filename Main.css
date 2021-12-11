@@ -1,53 +1,117 @@
-body {
-    background-image: url(images/fon.jpeg); /* Путь к фоновому изображению */
-    background-attachment: fixed; /* Фиксируем фон веб-страницы */
-    background-position: center;
-    background-size: cover;
+.navbar {
+    margin-left: 1%;
+    width: 98%;
+    height: 4rem;
+
 }
 
-.card-special{
-   background-color: #FFF;
-   position: relative;
-   margin: 60px auto;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 24px;
-   font-family: 'Roboto Condensed', sans-serif;
-   box-shadow: inset 6px 6px 8px 0 rgba(0,0,0,0.4);
-}
-.card-special:after,
-.card-special:before {
-    mix-blend-mode:multiply;
-    filter:none;
-    z-index: -1;
-    content:'';
-    width: calc(100% + 90px);
-    height: calc(100% + 90px);
+.navbar_text {
+    color: #000000;
+    font-size: 150%;
+    text-decoration: none; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    transition: all 77ms;
     position: absolute;
-    animation: card-special 8s ease-in-out infinite;
+    top: 50%;
+    margin-top: -0.625em;
 }
-@keyframes card-special {
-    0%, 100% {
-        clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
-    }
-    50% {
-        clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
-    }
+
+.navbar_border {
+    border-bottom: #000000;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 86%;
+    margin-left: 7%;
 }
-.card-special:after{
-    animation-delay: -5s;
-    background-color: #2e4c3c;
-    clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+
+.navbar_text:hover {
+    letter-spacing: 0.2rem;
+    font-size: 200%;
+    color: #000000;
 }
-.card-special:before {
-    background-color: #ffffff;
-    clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+
+.navbar_group {
+    width: 16.8%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;
 }
-.card-special:hover:after{
-    animation-delay: 1s;
+
+.header_welcome {
+    margin: 2rem;
+    height: 10rem;
+    margin-left: 6%;
+    width: 88%;
 }
-.card-special:hover:before,
-.card-special:hover:after {
-    animation-duration: 2s;
+
+.group_welcome {
+    float: left;
+    width: 20%;
+    max-height: 10rem;
+    height: 10rem;
+    margin-right: 0;
 }
+
+.name_welcome {
+    font-size: 3rem;
+    margin-left: 1rem;
+    letter-spacing: 0.5rem;
+    display: block;
+}
+
+.group_welcome_about {
+    float: left;
+    max-height: 6.5rem;
+    margin-top: 3.5rem;
+    width: 60%;
+    height: 10rem;
+    align-content: center;
+    text-align: center;
+}
+
+.name_welcome_about {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+
+.group_welcome_language {
+    width: 20%;
+    max-height: 10rem;
+    height: 10rem;
+
+    text-align: center;
+    writing-mode: vertical-rl;
+
+}
+
+.name_welcome_language {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.img_welcome {
+    margin: 2rem;
+    height: 33rem;
+    margin-left: 8%;
+    width: 84%;
+    background: url(images/Welcome1.jpeg) no-repeat;
+    background-size: cover ;
+    background-position: top;
+}
+
+.about_me_group {
+    margin-top: 10rem;
+}
+
+.about_me_header {
+    text-align: center;
+}
+
