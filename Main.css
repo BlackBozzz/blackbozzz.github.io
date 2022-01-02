@@ -1,13 +1,14 @@
 .navbar {
-    margin-left: 1%;
-    width: 98%;
+    margin-left: 7%;
+    width: 86%;
     height: 4rem;
 
 }
 
+
 .navbar_text {
     color: #000000;
-    font-size: 150%;
+    font-size: calc(0.4em + 2vw);
     text-decoration: none; /* Добавляем подчеркивание при наведении курсора на ссылку */
     transition: all 77ms;
     position: absolute;
@@ -25,7 +26,7 @@
 
 .navbar_text:hover {
     letter-spacing: 0.2rem;
-    font-size: 200%;
+    font-size: calc(0.4em + 3vw);
     color: #000000;
 }
 
@@ -39,57 +40,62 @@
 
 .header_welcome {
     margin: 2rem;
-    height: 10rem;
+    height: calc(5em + 3vw);
     margin-left: 6%;
     width: 88%;
+
 }
 
 .group_welcome {
     float: left;
     width: 20%;
-    max-height: 10rem;
-    height: 10rem;
+    height: 100%;
     margin-right: 0;
 }
 
 .name_welcome {
-    font-size: 3rem;
+    width: 100%;
+    height: 50%;
+    font-size: calc(0.4em + 3vw);
+    margin: 0;
     margin-left: 1rem;
-    letter-spacing: 0.5rem;
-    display: block;
+    letter-spacing: 1vw;
 }
 
 .group_welcome_about {
     float: left;
-    max-height: 6.5rem;
-    margin-top: 3.5rem;
     width: 60%;
-    height: 10rem;
+    height: 100%;
     align-content: center;
     text-align: center;
 }
 
 .name_welcome_about {
-    font-size: 1.5rem;
-    margin-left: 1rem;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    font-size: calc(0.6em + 2vw);
 }
 
 
 .group_welcome_language {
     width: 20%;
-    max-height: 10rem;
-    height: 10rem;
-
-    text-align: center;
+    height: 100%;
     writing-mode: vertical-rl;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    text-align-last: justify;
 
 }
 
 .name_welcome_language {
+    margin: 0;
+    line-height: 100%;
+    text-align: center;
     display: inline-block;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
+    width: calc(0.6em + 2vw);
+    font-size: calc(0.2em + 2vw);
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
@@ -98,20 +104,42 @@
 }
 
 .img_welcome {
-    margin: 2rem;
+    margin: 3rem;
     height: 33rem;
     margin-left: 8%;
     width: 84%;
-    background: url(images/Welcome1.jpeg) no-repeat;
+    background: url(images/Welcome1.JPG) no-repeat;
     background-size: cover ;
     background-position: top;
 }
 
 .about_me_group {
-    margin-top: 10rem;
+    margin-top: 25%;
+    margin-bottom: 25%;
 }
 
-.about_me_header {
+.block_header {
     text-align: center;
+    font-size: calc(1.2em + 3vw);
+    margin-bottom: 10%;
 }
 
+.about_me_text {
+    font-size: calc(0.6em + 1.5vw);
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.programs_block {
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    display: inline;
+}
+
+.card_program {
+
+}
