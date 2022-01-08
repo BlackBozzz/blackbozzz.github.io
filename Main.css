@@ -106,7 +106,7 @@
 
 .img_welcome {
     margin: 3rem;
-    height: 33rem;
+    height: calc(2em + 40vw);
     margin-left: 8%;
     width: 84%;
     background: url(images/Welcome1.JPG) no-repeat;
@@ -171,14 +171,15 @@
 .conts {
     display: flex;
     justify-content: space-between;
-    width: 40%;
-    margin-left: 30%;
+    width: 50%;
+    margin-left: 25%;
     padding: 0;
     margin-bottom: 5%;
 }
 
 .cont {
     list-style: none;
-    width: 10%;
+    width: 15%;
+    min-width: 35px;
 
 }
